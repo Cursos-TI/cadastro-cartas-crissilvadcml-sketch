@@ -139,14 +139,60 @@ int main() {
   printf("\n=== Comparação de Cartas ===\n");
 
   // Para a maioria dos atributos, maior valor vence
-  printf("Populacao: Carta 1 venceu (%d)\n, populacao1 > populacao2" );
-  printf("Area: Carta 1 venceu (%.2f)\n, area1 > area2");
-  printf("Pib: Carta 1 venceu (%.2f)\n, pib1 > pib2");
-  printf("Pontos Turisticos: Carta 1 venceu (%d)\n, pontosturisticos1 > pontosturisticos2");
-  printf("PIB per Capita: Carta 1 venceu (%.2f)\n, pib_per_capita1 > pib_per_capita2");
-
+  printf("Populacao: Carta 1 venceu (%lu)\n", populaçao1);
+  printf("Area: Carta 1 venceu (%.2f)\n", area1);
+  printf("Pib: Carta 1 venceu (%.2f)\n", pib1);
+  printf("Pontos Turisticos: Carta 1 venceu (%d)\n", pontosturisticos1);
+  printf("PIB per Capita: Carta 1 venceu (%.2f)\n", pib_per_capita1);
   // Para densidade populacional, menor valor vence
-  printf("Densidade Populacional: Carta 1 venceu (%.2f)\n, densindade1 < densidade2");
+  printf("Densidade Populacional: Carta 1 venceu (%.2f)\n", densindade1);
+
+
+  // *** Comparação das Cartas 1 e 2 ***
+
+  printf("\n=== Comparacao de Cartas ===\n\n");
+
+// População
+if (populaçao1 > populaçao2)
+    printf("Populacao: Carta 1 venceu (%lu)\n", populaçao1);
+else
+    printf("Populacao: Carta 2 venceu (%lu)\n", populaçao2);
+
+// Área
+if (area1 > area2)
+    printf("Area: Carta 1 venceu (%.2f)\n", area1);
+else
+    printf("Area: Carta 2 venceu (%.2f)\n", area2);
+
+// PIB
+if (pib1 > pib2)
+    printf("PIB: Carta 1 venceu (%.2f)\n", pib1);
+else
+    printf("PIB: Carta 2 venceu (%.2f)\n", pib2);
+
+// Pontos Turísticos
+if (pontosturisticos1 > pontosturisticos2)
+    printf("Pontos Turisticos: Carta 1 venceu (%d)\n", pontosturisticos1);
+else
+    printf("Pontos Turisticos: Carta 2 venceu (%d)\n", pontosturisticos2);
+
+// PIB per capita
+if (pib_per_capita1 > pib_per_capita2)
+    printf("PIB per Capita: Carta 1 venceu (%.2f)\n", pib_per_capita1);
+else
+    printf("PIB per Capita: Carta 2 venceu (%.2f)\n", pib_per_capita2);
+
+// Densidade (MENOR vence)
+if (densindade1 < densidade2)
+    printf("Densidade Populacional: Carta 1 venceu (%.2f)\n", densindade1);
+else
+    printf("Densidade Populacional: Carta 2 venceu (%.2f)\n", densidade2);
+
+// Super Poder
+if (super_poder1 > super_poder2)
+    printf("Super Poder: Carta 1 venceu (%.2f)\n", super_poder1);
+else
+    printf("Super Poder: Carta 2 venceu (%.2f)\n", super_poder2);
 
     return 0;
 } 
